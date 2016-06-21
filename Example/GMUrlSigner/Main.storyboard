@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="YHViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL to be signed" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GDP-r9-OdU">
+                                <rect key="frame" x="16" y="40" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your cryptographic key" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-nU-L9f">
+                                <rect key="frame" x="16" y="91" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssg-5q-7Aj">
+                                <rect key="frame" x="268" y="145" width="65" height="30"/>
+                                <state key="normal" title="Sign URL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SignURLAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="3yW-PL-FgL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-Uu-xxr">
+                                <rect key="frame" x="16" y="195" width="568" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Med-5k-gfY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFc-nU-L9f" firstAttribute="leading" secondItem="GDP-r9-OdU" secondAttribute="leading" id="30w-T8-iNl"/>
+                            <constraint firstItem="nFc-nU-L9f" firstAttribute="top" secondItem="GDP-r9-OdU" secondAttribute="top" constant="51" id="3wz-Sy-M9n"/>
+                            <constraint firstItem="YoF-Uu-xxr" firstAttribute="trailing" secondItem="nFc-nU-L9f" secondAttribute="trailing" id="4Tg-O5-A9B"/>
+                            <constraint firstItem="Ssg-5q-7Aj" firstAttribute="top" secondItem="YoF-Uu-xxr" secondAttribute="top" constant="-50" id="8ch-wL-ghv"/>
+                            <constraint firstItem="nFc-nU-L9f" firstAttribute="top" secondItem="Ssg-5q-7Aj" secondAttribute="top" constant="-54" id="EZQ-9Y-RnZ"/>
+                            <constraint firstItem="GDP-r9-OdU" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="Mbw-cI-vPo"/>
+                            <constraint firstAttribute="centerX" secondItem="GDP-r9-OdU" secondAttribute="centerX" id="Mrk-1i-zXd"/>
+                            <constraint firstItem="GDP-r9-OdU" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="20" id="O0S-rx-hpI"/>
+                            <constraint firstItem="nFc-nU-L9f" firstAttribute="trailing" secondItem="GDP-r9-OdU" secondAttribute="trailing" id="QJF-iW-YWs"/>
+                            <constraint firstAttribute="centerX" secondItem="nFc-nU-L9f" secondAttribute="centerX" id="XMf-12-BxH"/>
+                            <constraint firstAttribute="centerX" secondItem="YoF-Uu-xxr" secondAttribute="centerX" id="XcK-KA-oWs"/>
+                            <constraint firstAttribute="centerX" secondItem="Ssg-5q-7Aj" secondAttribute="centerX" id="jgA-S2-fU7"/>
+                            <constraint firstItem="YoF-Uu-xxr" firstAttribute="leading" secondItem="nFc-nU-L9f" secondAttribute="leading" id="q66-cd-NS7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="privateKeyTextField" destination="nFc-nU-L9f" id="tXf-Zy-IiX"/>
+                        <outlet property="resultLabel" destination="YoF-Uu-xxr" id="dnI-0b-hnM"/>
+                        <outlet property="urlTextField" destination="GDP-r9-OdU" id="lau-Cz-iln"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+    </scenes>
+</document>

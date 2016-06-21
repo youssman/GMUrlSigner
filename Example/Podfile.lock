@@ -1,0 +1,14 @@
+PODS:
+  - GMUrlSigner (0.1.0)
+
+DEPENDENCIES:
+  - GMUrlSigner (from `../`)
+
+EXTERNAL SOURCES:
+  GMUrlSigner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GMUrlSigner: df0a0b46fb31cff8312f5b3673e8e98b4e890107
+
+COCOAPODS: 0.36.0

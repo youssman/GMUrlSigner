@@ -1,0 +1,25 @@
+{
+  "name": "GMUrlSigner",
+  "version": "0.1.0",
+  "summary": "A short description of GMUrlSigner.",
+  "description": "                       An optional longer description of GMUrlSigner\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GMUrlSigner",
+  "license": "MIT",
+  "authors": {
+    "youssman": "haiti.youssef@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GMUrlSigner.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "GMUrlSigner": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
