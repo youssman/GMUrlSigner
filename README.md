@@ -7,7 +7,7 @@
 
 This example provides a function for generating the URL of signatures required for Google Maps API web service (business account) calls in Objective-C projects.
 
-The original code is available [here](http://gmaps-samples.googlecode.com/svn/trunk/urlsigning/urlsigner.m).
+The original code is available [here](https://github.com/googlemaps/url-signing/blob/gh-pages/urlsigner.m).
 
 I simply took the necessary code to the URL signature generation and use it in a simple way.
 
@@ -62,11 +62,11 @@ Cheers ! :beers:
 
 ## Links
 
-[the Google Toolbox for Mac](http://google-toolbox-for-mac.googlecode.com/svn/trunk/)
+[the Google Toolbox for Mac](https://github.com/google/google-toolbox-for-mac)
 
 [URL Signing Debugger](https://m4b-url-signer.appspot.com/)
 
-[Original UrlSigner.m](http://gmaps-samples.googlecode.com/svn/trunk/urlsigning/urlsigner.m)
+[Original UrlSigner.m](https://github.com/google/google-toolbox-for-mac/blob/452cef319d953d4b3f21d7e4adfc0940bed1fb2b/Foundation/GTMStringEncoding.m)
 
 ## Author
 
